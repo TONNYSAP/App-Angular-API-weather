@@ -1,0 +1,26 @@
+.navegate {
+    position: absolute;
+    width: 200px;
+    height: 100%;
+    margin-top: 0;
+    
+    background-color: darkblue;
+}
+.navegate ul {
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
+.navegate li {
+    list-style: none;
+    
+    padding: 10px 5px 10px 5px;
+    cursor: pointer;
+}
+.navegate li:hover {
+    
+    background-color: darkcyan;    
+}
+.navegate li a {
+    color: white;
+    text-decoration: none;
+}

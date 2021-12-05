@@ -1,0 +1,41 @@
+<div class="container">
+    
+    <form novalidate (ngSubmit)="cadastrarLogin()" [formGroup]="cadastroLogin">
+
+        <hr>
+        <div class="campo-cards">
+            <label for="name">Nome</label><br>
+            <input type="text" id="name" name="name" placeholder="Nome completo" formControlName="name">
+        </div>
+
+        <div class="campo-cards">
+            <label for="nome">CPF</label><br>
+            <input type="text" id="cpf" name="cpf" placeholder="CPF" formControlName="cpf" cpf [textMask]="{mask: MASKS.cpf.textMask}">
+        </div>
+    
+        <div class="campo-cards">
+            <label for="endereco">Endereço</label><br>
+            <input type="address" id="endereco" name="endereco" placeholder="Endereço" formControlName="address">
+        </div>
+    
+        <div class="campo-cards">
+            <label for="telefone">Telefone</label><br>
+            <input type="text" id="telefone" name="telefone" placeholder="Telefone" formControlName="telefone" >
+        </div>
+    
+        <div class="campo-cards">
+            <label for="senha">Senha</label><br>
+            <input type="password" id="senha" name="senha" placeholder="Senha" formControlName="senha">
+        </div>
+
+        <div class="campo-cards">
+            <label for="confirmsenha">Confirmar a Senha</label><br>
+            <input type="password" id="confirmsenha" name="confirmsenha" placeholder="Confirme a Senha" formControlName="confirmsenha">
+        </div>
+        
+        <br>
+        <button type="submit" [disabled]='!cadastroLogin.valid' >Registrar</button> <!--[disabled]="!cadastroLogin.valid"-->
+
+    </form> 
+
+</div>

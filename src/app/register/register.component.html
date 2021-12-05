@@ -1,0 +1,38 @@
+
+<div class="container">
+    
+    <form novalidate (ngSubmit)="cadastrarUsuario()" [formGroup]="cadastroUsuario">
+
+        <hr>
+        <div class="campo-cards">
+            <label for="name">Nome</label><br>
+            <input type="text" id="name" name="name" placeholder="Nome completo" formControlName="name">
+        </div>
+    
+        <div class="campo-cards">
+            <label for="endereco">Endereço</label><br>
+            <input type="address" id="endereco" name="endereco" placeholder="Endereço" formControlName="endereco">
+        </div>
+    
+        <div class="campo-cards">
+            <label for="email">Email</label><br>
+            <input type="email" id="email" name="email" placeholder="Email" formControlName="email">
+        </div>
+    
+        <div class="campo-cards">
+            <label for="nome">Telefone</label><br>
+            <input type="text" id="telefone" name="telefone" placeholder="Telefone" formControlName="telefone">
+        </div>
+
+        <div class="campo-cards">
+            <label for="nome">CPF</label><br>
+            <input type="text" id="cpf" name="cpf" placeholder="CPF" formControlName="cpf">
+        </div>
+
+        <br>
+        <button type="submit" [disabled]="!cadastroUsuario.valid" >Registrar</button> <!--[disabled]="!cadastroUsuario.valid"-->
+
+    </form> 
+
+</div>
+

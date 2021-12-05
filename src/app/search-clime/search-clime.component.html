@@ -1,0 +1,16 @@
+
+<div class="boxarea">
+    <h2>{{ title }}</h2>
+    <h3>Busque pela sua cidade</h3>
+    <div id="formulario">    
+
+        <input id="estado" type="text" placeholder="a sigla de seu Estado" [(ngModel)]="meuEstado">
+      <br><br>
+        <input id="cidade" type="text" placeholder="sua Cidade" [(ngModel)]="suaCidade">
+        
+        <p>{{ meuEstado }}/{{ suaCidade }}</p>
+        <br>
+        <hr>
+        <button id="button" (click)="Buscar()">Buscar</button>
+    </div>
+</div>

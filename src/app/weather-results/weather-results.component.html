@@ -1,0 +1,26 @@
+<div class="container">    
+    <div class="content">
+        <input type="text" placeholder="escreva a sua cidade" id="cidade" name="cidade" [(ngModel)]="suaCidade">
+        <button (click)="buscaClima()" id="buscar">Buscar Clima</button>
+        <button (click)="limparCampos()" id="limpar">Limpar Campos</button>
+        <h2>Resultados do Clima</h2>
+        <table id="tabela">
+            <tr>
+                <th>index</th>
+                <th>Cidade</th>
+                <th>Temperatura</th>
+                <th>Umidade</th>
+                <th>Pressão</th>
+                <th>Clima</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>{{ nomeCidade }}</td>
+                <td>{{ temperatura }}°C</td>
+                <td>{{ umidade }}%</td>
+                <td>{{ pressao }}Pa</td>
+                <td>{{ descricao }}</td>
+            </tr>
+        </table>
+    </div>
+</div>

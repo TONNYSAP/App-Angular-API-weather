@@ -1,0 +1,17 @@
+.boxarea {
+    margin-top: 20px;
+    text-align: center;
+}
+#button {
+    border: 3px solid blue;
+    border-radius: 5px;
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+    padding: 10px 25px;
+
+    transition: .5s;
+}
+#button:hover {
+    background-color: #060669;
+}

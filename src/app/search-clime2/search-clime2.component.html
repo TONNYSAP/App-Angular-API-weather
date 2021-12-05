@@ -1,0 +1,48 @@
+<div class="boxarea">
+    <h2>{{ title }}</h2>
+    <h3>Busque pela sua cidade</h3>
+    <div id="formulario">    
+
+        <!-- <input id="estado" type="text" placeholder="a sigla de seu Estado" [(ngModel)]="meuEstado"> -->
+        <select id="estado" type="text" (change)="buscaCidades()" [(ngModel)]="meuEstado">
+            <option value=30>Selecione o Estado</option>
+            <option value="20">RO</option>
+            <option value="21">RR</option>
+            <option value="0">AC</option>
+            <option value="2">AM</option>
+            <option value="13">PA</option>
+            <option value="3">AP</option>
+            <option value="26">TO</option>
+            <option value="9">MA</option>
+            <option value="16">PI</option>
+            <option value="5">CE</option>
+            <option value="19">RN</option>
+            <option value="14">PB</option>
+            <option value="15">PE</option>
+            <option value="1">AL</option>
+            <option value="24">SE</option>
+            <option value="4">BA</option>
+            <option value="10">MG</option>
+            <option value="7">ES</option>
+            <option value="18">RJ</option>
+            <option value="25">SP</option>
+            <option value="17">PR</option>
+            <option value="23">SC</option>
+            <option value="22">RS</option>
+            <option value="11">MS</option>
+            <option value="12">MT</option>
+            <option value="8">GO</option>
+            <option value="6">DF</option>       
+         </select>
+      <br><br>
+        <!-- <input id="cidade" type="text" placeholder="sua Cidade" [(ngModel)]="suaCidade"> -->
+        
+        <select id="cidade" type="text" [(ngModel)]="suaCidade">
+        </select>
+        
+        <!-- <p>{{ meuEstado }}/{{ suaCidade }}</p> -->
+        <br>
+        <hr>
+        <button id="button" (click)="Buscar()">Buscar</button>
+    </div>
+</div>
